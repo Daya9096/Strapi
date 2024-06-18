@@ -20,4 +20,4 @@ jobs:
 
       - name: Deploy to EC2
         run: |
-          ssh ubuntu@ec2-instance-ip "cd /path/to/your/strapi && git pull origin main && npm install && npm run build && pm2 restart strapi"
+          ssh ubuntu@ip-172-31-33-67 "cd /root/strapi && git pull origin main && npm install && npm run build && pm2 restart strapi-app"
